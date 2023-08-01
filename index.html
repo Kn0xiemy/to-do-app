@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rubik:wght@300&family=Satisfy&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 id="header">Things to do</h2>
+    <div class="row">
+      <div class="col-9 md-4 d-flex"> <!--Applied responsiveness, which works on all devices on Google Chrome's dev tools, except the Galaxy Fold. Could not make it work, so any advice will be appreciated!-->
+        <input type="text" id="text-input" placeholder="Write here..">
+      </div>
+      <div class="col-3 md-4 d-flex"><!--Applied responsiveness here as well-->
+        <button type="button" class="add-btn bg-white" id="addToDo">Add</button> <!--BS used to provide a bg-color for our button in static state-->
+      </div>
+    </div>
+    <div class="to-do-container" id="toDoContainer"></div> <!-- Container for upcoming to do elements-->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="JQ.js"></script>
+</body>
+</html>

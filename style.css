@@ -1,0 +1,105 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffff;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+  background-color: #1c383b;
+  color: #eee;
+  border-radius: 1.5em;
+  padding: 1.2rem 2rem 1.8rem;
+  text-align: center;
+  box-shadow: 10px 10px #c9c1c1;
+
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+#text-input {
+  width: 25rem;
+  border-radius: 1.5rem 0rem 0rem 1.5rem;
+  border: 1px solid #ffff;
+  padding: 0.3rem 0.7rem;
+  outline-style: none;
+  background-color: #1c383b;
+  color: #fff;
+}
+
+.add-btn {
+  width: 7rem;
+  padding: 0.33rem 0.8rem;
+  margin-left: -1.5rem;
+  border-style: none;
+  border-radius: 0rem 1.5rem 1.5rem 0rem;
+  font-weight: bold;
+  color: #1c383b;
+}
+
+/*Hover effect over the Add button with important being applied as the effect is being overwritten by BS */
+.add-btn:hover{
+  background-color: #5fb385 !important;
+  color: #fff !important;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+/* Added some margin to balance the spacing between the other buttons and input field*/
+.task {
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.edit-btn {
+  padding: 0.1rem 0.8rem;
+  margin-left: 0.3rem;
+  margin-top: 0.25rem;
+  border-style: none;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  font-weight: bold;
+  width: 3rem;
+  color: #1c383b;
+}
+
+.delete-btn {
+  padding: 0.1rem 0.8rem;
+  margin-left: 0.3rem;
+  margin-top: 0.25rem;
+  border-style: none;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  font-weight: bold;
+  width: 4rem;
+  color: #1c383b;
+}
+
+.edit-btn:hover{
+  background-color: #3b5999 !important;
+  color: #fff !important;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.delete-btn:hover{
+  background-color: #b12347 !important;
+  color: #fff !important;
+  cursor:pointer;
+  transition: 0.5s;
+}
